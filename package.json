@@ -1,0 +1,26 @@
+{
+  "name": "studio-slam",
+  "version": "1.0.0",
+  "description": "WP Theme for Studio Slam 2025",
+  "author": "Hada Jang",
+  "license": "ISC",
+  "homepage": "https://github.com/HadaRaion/studio-slam#readme",
+  "scripts": {
+    "start": "wp-scripts start --webpack-src-dir=src --output-path=public",
+    "build": "wp-scripts build --webpack-src-dir=src --output-path=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HadaRaion/studio-slam.git"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.25.0",
+    "path": "^0.12.7",
+    "webpack-remove-empty-scripts": "^1.1.1"
+  },
+  "dependencies": {
+    "@barba/core": "^2.10.3",
+    "@splidejs/splide": "^4.1.4",
+    "gsap": "^3.13.0"
+  }
+}

@@ -1,0 +1,25 @@
+/* 3rd party packages */
+// @import 'normalize.css';
+// @import "../node_modules/@splidejs/splide/dist/css/splide.min.css";
+
+/* SASS and Global'ish Stuff */
+@import "base/mixin";
+@import "base/variables";
+@import "base/reset";
+@import "base/typo";
+
+/* BEM Blocks */
+@import "modules/_layout";
+@import "modules/_site-header";
+@import "modules/_menu-btn";
+@import "modules/_menu";
+@import "modules/_main";
+@import "modules/_mouse";
+@import "modules/_loader";
+
+/* BEM Blocks for each page */
+@import "modules/_home";
+@import "modules/_about";
+@import "modules/_works";
+@import "modules/_detail";
+@import "modules/_contact";

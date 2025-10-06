@@ -1,0 +1,28 @@
+$slamDark: #17293a;
+$slamMid: #c5b494;
+$slamLight: #f4ece9;
+$slamWhite: #ffffff;
+
+:root {
+	--easing: cubic-bezier(0.5, 0.7, 0.4, 1);
+	--container-padding: 120px;
+	--header-padding: 30px;
+	--logo-height: 54px;
+	--header-height: calc(var(--header-padding) * 2 + var(--logo-height));
+}
+
+@mixin atMedium {
+	:root {
+		--container-padding: 50px;
+		--header-padding: 20px;
+		--logo-height: 45px;
+	}
+}
+
+@mixin atSmall {
+	:root {
+		--container-padding: 20px;
+		--header-padding: 10px;
+		--logo-height: 30px;
+	}
+}
