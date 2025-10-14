@@ -1,0 +1,146 @@
+{
+    "key": "group_68ec9b47a12a2",
+    "title": "Home (English)",
+    "fields": [
+        {
+            "key": "field_68ec9f0841523",
+            "label": "홈페이지 텍스트 (한글)",
+            "name": "headline_ko",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "영문 메인페이지에 보여질 텍스트를 입력해주세요.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "‘다름’을 존중하고 창조하는<br>\r\n크리에이터들의 공간",
+            "maxlength": 100,
+            "allow_in_bindings": 0,
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_68ec9b47a3449",
+            "label": "홈페이지 텍스트 (영문)",
+            "name": "headline_en",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "영문 메인페이지에 보여질 텍스트를 입력해주세요.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "A space for creators<br>\r\nwho respect and create ‘difference’",
+            "maxlength": 100,
+            "allow_in_bindings": 0,
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_68ec9b47a3453",
+            "label": "홈페이지 동영상",
+            "name": "bg_videos",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "동영상을 추가하시면 메인페이지의 배경으로 랜덤 재생 됩니다.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 5,
+            "collapsed": "",
+            "button_label": "동영상 추가",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_68ec9b47a4196",
+                    "label": "동영상",
+                    "name": "bg_video",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "15MB 이하의 mp4 또는 webm 포맷의 동영상만 추가 가능합니다.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": 15,
+                    "mime_types": "mp4, webm",
+                    "allow_in_bindings": 0,
+                    "parent_repeater": "field_68ec9b47a3453"
+                }
+            ]
+        },
+        {
+            "key": "field_68eca3aaf619e",
+            "label": "모바일용 배경이미지",
+            "name": "bg_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "모바일 기기에서 동영상 대신 사용될 배경이미지를 선택해주세요. 9:16 비율의 jpg 또는 webp 포맷의 이미지를 권장합니다.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": 1500,
+            "max_height": 3000,
+            "max_size": 2,
+            "mime_types": "jpg, webp",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "529"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "7"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1760339198
+}

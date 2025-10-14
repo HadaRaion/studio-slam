@@ -23,11 +23,6 @@ function slam_assets()
     $script_asset['version'],
     true
   );
-
-  // wp_localize_script('main-studio_slam-js', 'studio_slamData', array(
-  //   'root_url' => get_site_url(),
-  //   'nonce' => wp_create_nonce('wp_rest')
-  // ));
 }
 
 // Features
@@ -44,18 +39,15 @@ function studio_slam_features()
 add_action('after_setup_theme', 'studio_slam_features');
 
 
-// ACF JSON Save
 function slam_acf_json_save_point($path)
 {
-  return get_stylesheet_directory() . '/inc/acf-json';
+  return get_stylesheet_directory() . '/acf-json';
 }
 add_filter('acf/settings/save_json', 'slam_acf_json_save_point');
 
-// ACF JSON Load
 function slam_acf_json_load_point($paths)
 {
-  $paths[] = get_stylesheet_directory() . '/inc/acf-json';
-
+  $paths[] = get_stylesheet_directory() . '/acf-json';
   return $paths;
 }
 add_filter('acf/settings/load_json', 'slam_acf_json_load_point');
