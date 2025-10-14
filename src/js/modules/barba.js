@@ -1,6 +1,5 @@
 import barba from "@barba/core";
 import gsap from "gsap";
-import videoSource from "./mainVideo";
 // import ScrollOut from 'scroll-out';
 import initImageSlide from "./initImageSlide";
 import { animationLeave, animationEnter, mobileMenuOff } from "../animations";
@@ -79,9 +78,6 @@ barba.init({
     },
     {
       namespace: "home",
-      beforeEnter() {
-        videoSource();
-      },
       once({ next }) {
         loadOnce(next);
       },

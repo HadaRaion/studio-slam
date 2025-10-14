@@ -2,7 +2,7 @@
 
 <main class="wrapper about about-us" data-barba="container" data-barba-namespace="about">
 	<div class="page-header">
-		<h2>
+		<h2 class="headline-lg">
 			<span class="letter">A</span>
 			<span class="letter">b</span>
 			<span class="letter">o</span>
@@ -18,7 +18,7 @@
 		<div class="container-sm justify-content-between">
 			<div class="row">
 				<div class="col about__title">
-					<h3>Overview.</h3>
+					<h3 class="headline-md">Overview.</h3>
 					<div class="line"></div>
 				</div>
 				<div class="col about__text">
@@ -31,7 +31,7 @@
 		<div class="container-sm justify-content-between">
 			<div class="row">
 				<div class="col about__title">
-					<h3>Vision.</h3>
+					<h3 class="headline-md">Vision.</h3>
 					<div class="line"></div>
 				</div>
 				<div class="col about__text">
@@ -43,7 +43,7 @@
 		<div class="container-sm justify-content-between">
 			<div class="row">
 				<div class="col about__title">
-					<h3>Who we are.</h3>
+					<h3 class="headline-md">Who we are.</h3>
 					<div class="line"></div>
 				</div>
 				<div class="col about__text">
@@ -72,7 +72,7 @@
 		<div class="container-sm member">
 			<div class="row member__row">
 				<div class="col member__name">
-					<h4 data-scroll>Hyunjoon Yun</h4>
+					<h3 class="headline-sm" data-scroll>Hyunjoon Yun</h3>
 				</div>
 				<div class="col member__career">
 					<p data-scroll>: Chief Producer</p>
@@ -91,7 +91,7 @@
 
 			<div class="row member__row">
 				<div class="col member__name">
-					<h4 data-scroll>Gunyoung Ma</h4>
+					<h3 class="headline-sm" data-scroll>Gunyoung Ma</h3>
 				</div>
 				<div class="col member__career">
 					<p data-scroll>: Producer</p>
@@ -109,7 +109,7 @@
 
 			<div class="row member__row">
 				<div class="col member__name">
-					<h4  data-scroll>Hakmin Kim </h4>
+					<h4 data-scroll>Hakmin Kim </h4>
 				</div>
 				<div class="col member__career">
 					<p data-scroll>: Producer</p>
@@ -126,10 +126,10 @@
 
 			<div class="row member__row">
 				<div class="col member__name">
-					<h4  data-scroll>Sungwook Chae</h4>
+					<h4 data-scroll>Sungwook Chae</h4>
 				</div>
 				<div class="col member__career">
-				<p data-scroll>: Producer</p>
+					<p data-scroll>: Producer</p>
 					<p data-scroll>Previously at MBC</p>
 					<p data-scroll>2014 Transferred to JTBC</p>
 					<p data-scroll>2020 Transferred to Studio Slam</p>
@@ -147,7 +147,7 @@
 					<h4 data-scroll>Jiyae Park</h4>
 				</div>
 				<div class="col member__career">
-				<p data-scroll>: Producer</p>
+					<p data-scroll>: Producer</p>
 					<p data-scroll>Previously at MBC</p>
 					<p data-scroll>2014 Transferred to JTBC</p>
 					<p data-scroll>2020 Establish Studio Slam</p>
@@ -161,7 +161,7 @@
 			</div>
 
 		</div>
-		
+
 	</div>
 
 </main>

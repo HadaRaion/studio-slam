@@ -1,71 +1,71 @@
 .menu {
-	pointer-events: none;
+  pointer-events: none;
 
-	&.active {
-		display: block;
-		pointer-events: all;
-	}
+  &.active {
+    display: block;
+    pointer-events: all;
+  }
 
-	&__overlay {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: calc(var(--vh, 1vh) * 100);
-		z-index: 50;
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    z-index: 50;
 
-		&::before {
-			content: '';
-			display: block;
-			width: 200%;
-			height: 200vh;
-			background-color: $slamDark;
-			opacity: 0.9;
-			transition: all 0.5s var(--easing);
-			transform: rotate(27deg) translateX(-150%);
-		}
+    &::before {
+      content: "";
+      display: block;
+      width: 200%;
+      height: 200vh;
+      background-color: $slamDark;
+      opacity: 0.9;
+      transition: all 0.5s var(--easing);
+      transform: rotate(27deg) translateX(-150%);
+    }
 
-		&.active::before {
-			transform: rotate(27deg) translateX(-60%);
-		}
-	}
+    &.active::before {
+      transform: rotate(27deg) translateX(-60%);
+    }
+  }
 
-	&__list {
-		position: fixed;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		z-index: 60;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+  &__list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-		.menu {
-			pointer-events: unset;
-		}
+    .menu {
+      pointer-events: unset;
+    }
 
-		& ul {
-			font-size: clamp(3rem, 4vw, 6rem);
-			font-weight: 700;
-			text-transform: capitalize;
-			text-align: center;
-		}
+    & ul {
+      font-size: clamp(3rem, 4vw, 6rem);
+      font-weight: 700;
+      text-transform: capitalize;
+      text-align: center;
+    }
 
-		li {
-			margin-bottom: 40px;
-			opacity: 0;
+    li {
+      margin-bottom: 40px;
+      opacity: 0;
 
-			&:last-child {
-				margin-bottom: 0;
-			}
+      &:last-child {
+        margin-bottom: 0;
+      }
 
-			a {
-				transition: color 0.5s var(--easing);
-			}
-			a:hover {
-				color: $slamMid;
-			}
-		}
-	}
+      a {
+        transition: color 0.5s var(--easing);
+      }
+      a:hover {
+        color: $slamMid;
+      }
+    }
+  }
 }

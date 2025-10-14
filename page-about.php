@@ -2,7 +2,7 @@
 
 <main class="wrapper about" data-barba="container" data-barba-namespace="about">
 	<div class="page-header">
-		<h2>
+		<h2 class="headline-lg">
 			<span class="letter">A</span>
 			<span class="letter">b</span>
 			<span class="letter">o</span>
@@ -113,7 +113,7 @@
 
 			<div class="row member__row">
 				<div class="col member__name">
-					<h4  data-scroll>김학민</h4>
+					<h4 data-scroll>김학민</h4>
 				</div>
 				<div class="col member__career">
 					<p data-scroll>2011 JTBC 입사</p>
@@ -131,7 +131,7 @@
 
 			<div class="row member__row">
 				<div class="col member__name">
-					<h4  data-scroll>채성욱</h4>
+					<h4 data-scroll>채성욱</h4>
 				</div>
 				<div class="col member__career">
 					<p data-scroll>前 MBC PD</p>
@@ -265,7 +265,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="row member__row">
 				<div class="col member__name">
 					<h4 data-scroll>김규리</h4>
