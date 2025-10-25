@@ -1,6 +1,6 @@
 {
     "key": "group_68ec9b47a12a2",
-    "title": "Home (English)",
+    "title": "Home",
     "fields": [
         {
             "key": "field_68ec9f0841523",
@@ -142,5 +142,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1760339198
+    "modified": 1760418953
 }

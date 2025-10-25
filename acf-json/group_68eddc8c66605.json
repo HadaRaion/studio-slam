@@ -1,0 +1,133 @@
+{
+    "key": "group_68eddc8c66605",
+    "title": "Contact",
+    "fields": [
+        {
+            "key": "field_68eddc8c847e5",
+            "label": "주소 (한글)",
+            "name": "address_ko",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Contact 페이지에 Location으로 보여질 한글 주소를 입력해주세요.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "서울특별시 마포구 상암산로 488-6, 14층(상암동, 중앙일보빌딩)",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68eddcee847e6",
+            "label": "주소 (영문)",
+            "name": "address_en",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Contact 페이지에 Location으로 보여질 영문 주소를 입력해주세요.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "14F, JoongAng Ilbo Building, 488-6 Sangamsan-ro, Mapo-gu, Seoul, Republic of Korea",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68eddd4e847e7",
+            "label": "이메일주소",
+            "name": "mail",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "Contact 페이지에 Mail으로 보여질 이메일 주소를 입력해주세요.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "contact@studioslam.net",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68eddd9e847e8",
+            "label": "구글지도",
+            "name": "map_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "구글맵서에서 \"공유-지도 퍼가기\" 선택시 나오는 <iframe> 태그 안에서에서 'src'값인 '지도 url 주소'를 입력해주세요.\r\n예: <iframe src=\"지도 url 주소\">",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3162.0675096008704!2d126.8875065120832!3d37.57702797191927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c991331d587dd%3A0xeecfbe2bb45482b!2z64yA7ZWc66-86rWtIOyEnOyauO2KueuzhOyLnCDrp4jtj6zqtawg7IOB7JWU7IKw66GcIDQ4LTY!5e0!3m2!1sko!2sca!4v1751853839000!5m2!1sko!2sca",
+            "allow_in_bindings": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_68f58d9f6a317",
+            "label": "폼 숏코드",
+            "name": "cf_code",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "19"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "872"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1760923106
+}

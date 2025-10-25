@@ -1,0 +1,275 @@
+{
+    "key": "group_68f58f8686f6d",
+    "title": "About",
+    "fields": [
+        {
+            "key": "field_68f58f86a238f",
+            "label": "Overview",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 1,
+            "selected": 0
+        },
+        {
+            "key": "field_68f5900ea2390",
+            "label": "Overview Title",
+            "name": "overview_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "About us 페이",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Overview.",
+            "maxlength": 12,
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68f5917aa2391",
+            "label": "Overview Text (한글)",
+            "name": "overview_text",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "스튜디오 슬램은 JTBC STUDIOS 산하 제작 레이블입니다.\r\n\r\n'웰메이드 콘텐츠' 제작을 통해 국내 방송 콘텐츠의 질적 향상과 더불어\r\n\r\n급변하는 미디어 시장 속 콘텐츠 다변화를 통한 문화경쟁력 확보에 앞장섭니다.",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": 5,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_68f59238a2392",
+            "label": "Overview Text (영문)",
+            "name": "overview_text_en",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Studio Slam is a production label under JTBC Studios.\r\n‘Well-made production’\r\nWe are taking the lead in K-media contents by improving the quality of domestic broadcasting contents and diversifying them in the rapidly changing media market.",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": 5,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_68f5926e511ac",
+            "label": "Vision",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_68f5928e511ae",
+            "label": "Vision Title",
+            "name": "vision_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Vision.",
+            "maxlength": 12,
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68f592ab511af",
+            "label": "Vision Text (한글)",
+            "name": "vision_text",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "채널사업자를 포함한 모바일, OTT, 인터넷 등 다양한 플랫폼에 최적화 된 오리지널 콘텐츠 제작을 통해\r\n미디어 시장의 선두 주자를 향해 나아갑니다.",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": 5,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_68f592b1511b0",
+            "label": "Vision Text (영문)",
+            "name": "vision_text_en",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Through the production of original contents optimized for various platform such as mobile, OTT, internet and television stations,\r\nwe are moving toward a leader in the media industry.",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": 5,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_68f5927b511ad",
+            "label": "Who we are",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_68f5a6eaa2fe9",
+            "label": "Wo we are Title",
+            "name": "who_we_are_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "About us 페이",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Who we are.",
+            "maxlength": 12,
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68f5a679a2fe7",
+            "label": "Who we are Text (한글)",
+            "name": "who_we_are_text",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "취향의 다양성을 존중한 색다른 콘텐츠를 제작하는 크리에이터 그룹.\r\n다양한 콘텐츠 백그라운드를 지닌 이들이 모여 새로움을 만들어갑니다.",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": 5,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_68f5a680a2fe8",
+            "label": "Who we are Text (영문)",
+            "name": "who_we_are_text_en",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Creators who produce unique contents that respect the diversity of tastes.\r\nWe make the novelty with various content backgrounds.",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": 5,
+            "placeholder": "",
+            "new_lines": "br"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "9"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "533"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1760929587
+}
