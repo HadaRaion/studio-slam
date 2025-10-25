@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+get_header();
+
+$address_ko = get_field('address_ko') ?? '';
+$address_en = get_field('address_en') ?? '';
+$mail       = get_field('mail') ?? 'contact@studioslam.net';
+$map_url    = get_field('map_url') ?? '';
+$cf_code    = get_field('cf_code') ?? '';
+?>
+
 <main class="wrapper contact" data-barba="container" data-barba-namespace="contact">
 	<div class="page-header">
 		<h2 class="headline-lg">
@@ -20,8 +29,8 @@
 						<p>Location.</p>
 					</div>
 					<div class="contact__info__content">
-						<p>서울시 마포구 상암산로 48-6, 중앙일보빌딩 14층</p>
-						<p>14F, JoongAng Ilbo Building, 48-6 Sangamsan-ro, Mapo-gu, Seoul, Republic of Korea</p>
+						<p><?php echo esc_html($address_ko); ?></p>
+						<p><?php echo esc_html($address_en); ?></p>
 					</div>
 				</div>
 
@@ -30,18 +39,17 @@
 						<p>Mail.</p>
 					</div>
 					<div class="contact__info__content">
-						<p><a mailto:contact@studioslam.net>contact@studioslam.net</a></p>
+						<p><a href="mailto:<?php echo esc_url($mail); ?>"><?php echo esc_html($mail); ?></a></p>
 					</div>
 				</div>
 
 				<div class="contact__map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.0675096008704!2d126.8875065120832!3d37.57702797191927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c991331d587dd%3A0xeecfbe2bb45482b!2z64yA7ZWc66-86rWtIOyEnOyauO2KueuzhOyLnCDrp4jtj6zqtawg7IOB7JWU7IKw66GcIDQ4LTY!5e0!3m2!1sko!2sca!4v1751853839000!5m2!1sko!2sca" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="0"></iframe>
+					<iframe src="<?php echo esc_url($map_url); ?>" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="0"></iframe>
 				</div>
 			</div>
 
 			<div class="col--contact contact__form col--contact-form">
-				<?php the_content() ?>
-
+				<?php echo do_shortcode($cf_code); ?>
 			</div>
 		</div>
 	</div>
