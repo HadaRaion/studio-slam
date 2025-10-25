@@ -39,6 +39,7 @@ function studio_slam_features()
 add_action('after_setup_theme', 'studio_slam_features');
 
 
+// ACF
 function slam_acf_json_save_point($path)
 {
   return get_stylesheet_directory() . '/acf-json';
@@ -51,3 +52,26 @@ function slam_acf_json_load_point($paths)
   return $paths;
 }
 add_filter('acf/settings/load_json', 'slam_acf_json_load_point');
+
+
+
+// Polylang Template Rewrite
+add_filter('template_include', function ($template) {
+  global $post;
+  if (! $post) {
+    return $template;
+  }
+
+  $slug = $post->post_name;
+
+  if (preg_match('/^(slam\-)?([a-z0-9\-]+?)(\-(en|us|jp|cn|fr|de))?$/', $slug, $matches)) {
+    $base = $matches[2]; // example: slam-recruit → recruit, contact-en → contact
+    $base_template = locate_template("page-{$base}.php");
+
+    if (! empty($base_template)) {
+      return $base_template;
+    }
+  }
+
+  return $template;
+});
