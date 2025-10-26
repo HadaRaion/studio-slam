@@ -1,12 +1,7 @@
 import barba from "@barba/core";
 import gsap from "gsap";
-// import ScrollOut from 'scroll-out';
 import initImageSlide from "./initImageSlide";
 import { animationLeave, animationEnter, mobileMenuOff } from "../animations";
-
-// const calculateLeftPosition = windowHeight => {
-// 	return parseFloat(windowHeight * Math.tan((27 * Math.PI) / 180));
-// };
 
 function delay(n) {
   n = n || 2000;
@@ -87,9 +82,6 @@ barba.init({
     },
     {
       namespace: "about",
-      beforeEnter() {
-        // ScrollOut();
-      },
       once({ next }) {
         loadOnce(next);
       },
