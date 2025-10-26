@@ -6,5 +6,5 @@ build-log.txt
 wp-config.php
 
 # Temp
-/public/
-public/css/styles.css.map
+public
+
