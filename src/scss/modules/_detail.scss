@@ -44,13 +44,9 @@
         border-radius: 50%;
         transition: margin-left 0.2s ease;
         margin-left: 10px;
-        // background: url('/wp-content/uploads/2021/01/icon_link.svg') no-repeat center;
-        // TODO: Add SVG
+        background: url("../../images/icons/icon_link.svg") no-repeat center;
       }
 
-      &:hover {
-        letter-spacing: 0.1rem;
-      }
       &:hover::after {
         margin-left: 12px;
       }
@@ -85,8 +81,7 @@
         height: 24px;
         transition: all 0.2s ease;
         margin-bottom: 10px;
-        // TODO: Add SVG
-        // background: url("/wp-content/uploads/2021/01/icon_go_back.svg") no-repeat center;
+        background: url("../../images/icons/icon_go_back.svg") no-repeat center;
 
         @mixin atSmall {
           margin: 0 auto 10px;
