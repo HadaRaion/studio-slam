@@ -20,7 +20,7 @@
 		</div>
 
 		<div class="container-fluid">
-			<h4 class="detail__title"><?php the_title(); ?></h4>
+			<h4 class="detail__title headline-sm"><?php the_title(); ?></h4>
 
 			<div class="row row--detail">
 				<div class="col col--detail-sub-title">
@@ -33,7 +33,7 @@
 					<p>연출 / <?php the_field('slam_pd'); ?></p>
 					<?php if (get_field('slam_writer')) : ?>
 						<p>작가 / <?php the_field('slam_writer'); ?></p>
-					<?php  endif; ?>
+					<?php endif; ?>
 				</div>
 			</div>
 
@@ -46,7 +46,7 @@
 						<p><?php the_field('slam_period'); ?></p>
 					</div>
 				</div>
-			<?php  endif; ?>
+			<?php endif; ?>
 
 			<?php if (get_field('slam_channel')) : ?>
 				<div class="row row--detail">
@@ -57,7 +57,7 @@
 						<p><?php the_field('slam_channel'); ?></p>
 					</div>
 				</div>
-			<?php  endif; ?>
+			<?php endif; ?>
 
 			<?php if (get_field('slam_platform')) : ?>
 				<div class="row row--detail">
@@ -68,7 +68,7 @@
 						<p><?php the_field('slam_platform'); ?></p>
 					</div>
 				</div>
-			<?php  endif; ?>
+			<?php endif; ?>
 
 			<?php if (get_field('slam_hosts')) : ?>
 				<div class="row row--detail">
@@ -79,7 +79,7 @@
 						<p><?php the_field('slam_hosts'); ?></p>
 					</div>
 				</div>
-			<?php  endif; ?>
+			<?php endif; ?>
 
 			<?php if (get_field('slam_plot')) : ?>
 				<div class="row row--detail">
@@ -90,7 +90,7 @@
 						<p><?php the_field('slam_plot'); ?></p>
 					</div>
 				</div>
-			<?php  endif; ?>
+			<?php endif; ?>
 
 			<?php if (get_field('slam_link')) : ?>
 				<div class="row row--detail row--for-detail-link">
@@ -98,20 +98,19 @@
 						<p class="detail__sub-title"></p>
 					</div>
 					<div class="col">
-						<p class="detail__link"><a href="<?php the_field('slam_link'); ?>" target="_blank" >공식홈페이지</a></p>
+						<p class="detail__link"><a href="<?php the_field('slam_link'); ?>" target="_blank">공식홈페이지</a></p>
 					</div>
 				</div>
-			<?php  endif; ?>
+			<?php endif; ?>
 
 			<?php if (get_field('slam_img_1')) : ?>
-			<div class="row row--detail">
-				<div class="col col--detail-sub-title">
-					<p class="detail__sub-title">Image.</p>
+				<div class="row row--detail">
+					<div class="col col--detail-sub-title">
+						<p class="detail__sub-title">Image.</p>
+					</div>
+					<div class="col">
+					</div>
 				</div>
-				<div class="col">
-				
-				</div>
-			</div>
 		</div>
 
 		<div class="container-fluid">
@@ -119,55 +118,55 @@
 				<div id="image-slider" class="splide detail__slider">
 					<div class="splide__track">
 						<ul class="splide__list">
-						<?php 
+							<?php
 							$image = get_field('slam_img_1');
-							if( !empty( $image ) ): ?>
+							if (!empty($image)): ?>
 								<li class="splide__slide">
 									<div class="splide__slide__wrapper">
 										<div class="splide__slide__img" style="background-image: url(<?php echo esc_url($image['url']); ?>);"></div>
-									<div>
-								</li>	
-						<?php endif;
+										<div>
+								</li>
+							<?php endif;
 							$image = get_field('slam_img_2');
-							if( !empty( $image ) ): ?>
+							if (!empty($image)): ?>
 								<li class="splide__slide">
 									<div class="splide__slide__wrapper">
 										<div class="splide__slide__img" style="background-image: url(<?php echo esc_url($image['url']); ?>);"></div>
-									<div>
-								</li>		
-						<?php endif;
+										<div>
+								</li>
+							<?php endif;
 							$image = get_field('slam_img_3');
-							if( !empty( $image ) ): ?>
+							if (!empty($image)): ?>
 								<li class="splide__slide">
 									<div class="splide__slide__wrapper">
 										<div class="splide__slide__img" style="background-image: url(<?php echo esc_url($image['url']); ?>);"></div>
-									<div>
-								</li>										
-						<?php endif;
+										<div>
+								</li>
+							<?php endif;
 							$image = get_field('slam_img_4');
-							if( !empty( $image ) ): ?>
+							if (!empty($image)): ?>
 								<li class="splide__slide">
 									<div class="splide__slide__wrapper">
 										<div class="splide__slide__img" style="background-image: url(<?php echo esc_url($image['url']); ?>);"></div>
-									<div>
-								</li>	
-						<?php endif;
+										<div>
+								</li>
+							<?php endif;
 							$image = get_field('slam_img_5');
-							if( !empty( $image ) ): ?>
+							if (!empty($image)): ?>
 								<li class="splide__slide">
 									<div class="splide__slide__wrapper">
 										<div class="splide__slide__img" style="background-image: url(<?php echo esc_url($image['url']); ?>);"></div>
-									<div>
-								</li>									
+										<div>
+								</li>
 							<?php endif;
 							$image = get_field('slam_img_6');
-							if( !empty( $image ) ): ?>	
+							if (!empty($image)): ?>
 								<li class="splide__slide">
 									<div class="splide__slide__wrapper">
 										<div class="splide__slide__img" style="background-image: url(<?php echo esc_url($image['url']); ?>);"></div>
-									<div>
-								</li>		
-						<?php endif; ?>
+										<div>
+								</li>
+							<?php endif; ?>
 
 
 						</ul>
@@ -175,20 +174,20 @@
 				</div>
 			</div>
 
-		</div>	
-		<?php  endif; ?>
+		</div>
+	<?php endif; ?>
 
-		<div class="container-fluid">
-			<div class="detail__go-back">
-			<?php if(pll_current_language() == 'ko'): ?> 
+	<div class="container-fluid">
+		<div class="detail__go-back">
+			<?php if (pll_current_language() == 'ko'): ?>
 				<a href="<?php echo site_url('/works/') ?>">Back</a>
-			<?php else: ?> 
+			<?php else: ?>
 				<a href="<?php echo site_url('/en/slam-works/') ?>">Back</a>
 			<?php endif; ?>
-				
-			</div>
-			
+
 		</div>
+
+	</div>
 	</div>
 </main>
 
