@@ -19,7 +19,7 @@
     color: $slamMid;
     margin-bottom: 50px;
 
-    @mixin atSmall {
+    @media (max-width: $bp-small) {
       margin-bottom: 40px;
     }
   }
@@ -59,7 +59,7 @@
     &-wrapper {
       max-width: 60%;
 
-      @mixin atMedium {
+      @media (max-width: $bp-medium) {
         max-width: 100%;
       }
     }
@@ -83,7 +83,7 @@
         margin-bottom: 10px;
         background: url("../../images/icons/icon_go_back.svg") no-repeat center;
 
-        @mixin atSmall {
+        @media (max-width: $bp-small) {
           margin: 0 auto 10px;
         }
       }
@@ -94,7 +94,7 @@
       }
     }
 
-    @mixin atSmall {
+    @media (max-width: $bp-small) {
       text-align: center;
     }
   }
@@ -149,10 +149,10 @@
   margin-right: -20px;
   margin-bottom: 10px;
 
-  @mixin atMedium {
+  @media (max-width: $bp-medium) {
     flex-direction: row;
   }
-  @mixin atSmall {
+  @media (max-width: $bp-small) {
     flex-direction: column;
     margin-bottom: 20px;
   }
@@ -160,7 +160,7 @@
 
 .col--detail-sub-title {
   flex: 0 0 120px;
-  @mixin atSmall {
+  @media (max-width: $bp-small) {
     flex: 0 0 auto;
   }
 }
@@ -168,7 +168,7 @@
 .row--for-detail-link {
   margin-top: 20px;
 
-  @mixin atSmall {
+  @media (max-width: $bp-small) {
     & > .col--detail-sub-title {
       display: none;
     }

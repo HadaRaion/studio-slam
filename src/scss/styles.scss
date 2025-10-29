@@ -1,12 +1,9 @@
 /* 3rd party packages */
-// @import 'normalize.css';
 @import "../../node_modules/@splidejs/splide/dist/css/splide.min.css";
-
 // import "@splidejs/splide/css/core";
 
 /* SASS and Global'ish Stuff */
-@import "base/mixin";
-@import "base/variables";
+@import "base/variables.scss";
 @import "base/reset";
 @import "base/typo";
 

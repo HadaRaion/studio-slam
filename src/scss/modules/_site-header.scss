@@ -1,56 +1,56 @@
 .header {
-	position: fixed;
-	width: 100%;
-	top: 0;
-	z-index: 10;
-	padding: var(--header-padding) 0;
-	transition: background 0.5s linear;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  padding: var(--header-padding) 0;
+  transition: background 0.5s linear;
 
-	.logo > img {
-		height: var(--logo-height);
-	}
+  .logo > img {
+    height: var(--logo-height);
+  }
 
-	&.active {
-		background: linear-gradient($slamDark 100%, transparent);
-	}
+  &.active {
+    background: linear-gradient($slamDark 100%, transparent);
+  }
 }
 
 .languages {
-	display: flex;
+  display: flex;
 
-	& li {
-		padding: 10px;
-		margin-left: 20px;
-		margin-right: -10px;
-		font-size: 2rem;
+  & li {
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: -10px;
+    font-size: 2rem;
 
-		@mixin atSmall {
-			font-size: 1.5rem;
-			margin-left: 10px;
-			margin-right: -10px;
-		}
-	}
+    @media (max-width: $bp-small) {
+      font-size: 1.5rem;
+      margin-left: 10px;
+      margin-right: -10px;
+    }
+  }
 
-	.current-lang {
-		color: $slamMid;
-	}
+  .current-lang {
+    color: $slamMid;
+  }
 
-	.lang-item:hover {
-		color: $slamMid;
-	}
+  .lang-item:hover {
+    color: $slamMid;
+  }
 }
 
 .social {
-	display: flex;
+  display: flex;
 
-	& li {
-		padding: 10px;
-		margin-left: 20px;
-		margin-right: -10px;
-	}
+  & li {
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: -10px;
+  }
 
-	a {
-		display: block;
-		font-size: 2rem;
-	}
+  a {
+    display: block;
+    font-size: 2rem;
+  }
 }

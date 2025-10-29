@@ -17,7 +17,7 @@ p {
 
   &.padding-left {
     padding-left: 20px;
-    @mixin atSmall {
+    @media (max-width: $bp-small) {
       padding-left: 14px;
     }
   }
@@ -28,7 +28,7 @@ a {
   text-decoration: none;
 }
 
-@mixin atSmall {
+@media (max-width: $bp-small) {
   .headline-lg {
     font-size: 4.8rem;
   }

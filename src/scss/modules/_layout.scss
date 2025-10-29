@@ -1,55 +1,55 @@
 .container-fluid {
-	padding: 0 var(--container-padding);
+  padding: 0 var(--container-padding);
 }
 
 .row {
-	display: flex;
-	margin-left: -20px;
-	margin-right: -20px;
+  display: flex;
+  margin-left: -20px;
+  margin-right: -20px;
 
-	@mixin atMedium {
-		flex-direction: column;
-	}
+  @media (max-width: $bp-medium) {
+    flex-direction: column;
+  }
 
-	&--direction-no-change {
-		@mixin atMedium {
-			flex-direction: row;
-		}
-	}
+  &--direction-no-change {
+    @media (max-width: $bp-medium) {
+      flex-direction: row;
+    }
+  }
 }
 
 .col {
-	padding-left: 20px;
-	padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .justify-content-between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 .align-items-center {
-	align-items: center;
+  align-items: center;
 }
 
 .container-sm {
-	max-width: 1100px;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 
-	@mixin atMedium {
-		padding: 0 var(--container-padding);
-	}
+  @media (max-width: $bp-medium) {
+    padding: 0 var(--container-padding);
+  }
 
-	& > .row {
-		@mixin atMedium {
-			flex-direction: row;
-		}
+  & > .row {
+    @media (max-width: $bp-medium) {
+      flex-direction: row;
+    }
 
-		@mixin atSmall {
-			flex-direction: column;
-		}
-	}
+    @media (max-width: $bp-small) {
+      flex-direction: column;
+    }
+  }
 }

@@ -47,12 +47,12 @@
     align-items: center;
     overflow: hidden;
 
-    @mixin atMedium {
+    @media (max-width: $bp-medium) {
       margin-left: 0;
       bottom: 155px;
     }
 
-    @mixin atSmall {
+    @media (max-width: $bp-small) {
       height: 120px;
       bottom: 150px;
     }
@@ -68,7 +68,7 @@
       opacity: 0.2;
       transform: translateX(-89px) skewX(-27deg);
 
-      @mixin atSmall {
+      @media (max-width: $bp-small) {
         opacity: 0.3;
       }
     }
@@ -78,7 +78,7 @@
       padding: 0 55px 0 40px;
       line-height: 2;
 
-      @mixin atSmall {
+      @media (max-width: $bp-small) {
         font-size: 1.6rem;
       }
     }

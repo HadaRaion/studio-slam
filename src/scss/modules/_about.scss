@@ -5,7 +5,7 @@
     border-top: 10px solid $slamMid;
     margin-top: 14px;
 
-    @mixin atSmall {
+    @media (max-width: $bp-small) {
       width: 150px;
       border-right: 2px solid transparent;
       border-top: 7px solid $slamMid;
@@ -20,11 +20,11 @@
   &__text {
     margin-bottom: 70px;
 
-    @mixin atMedium {
+    @media (max-width: $bp-medium) {
       margin-top: 16px;
       margin-bottom: 120px;
     }
-    @mixin atSmall {
+    @media (max-width: $bp-small) {
       margin-top: 14px;
       margin-bottom: 60px;
     }
@@ -52,7 +52,7 @@
       height: var(--member-height);
       border-right: 1px solid #fff;
       transform: translateX(-50px) skewX(-27deg);
-      @mixin atSmall {
+      @media (max-width: $bp-small) {
         width: 130px;
         height: 36px;
         transform: translateX(0px) skewX(-27deg);
@@ -76,7 +76,7 @@
       border-right: 1px solid #fff;
       background-color: $slamDark;
 
-      @mixin atMedium {
+      @media (max-width: $bp-medium) {
         display: none;
       }
     }
@@ -89,7 +89,7 @@
       display: flex;
       align-items: center;
 
-      @mixin atMedium {
+      @media (max-width: $bp-medium) {
         display: none;
       }
 
@@ -134,7 +134,7 @@
   &__row {
     margin-bottom: 150px;
 
-    @mixin atSmall {
+    @media (max-width: $bp-small) {
       margin-bottom: 90px;
     }
   }
@@ -142,7 +142,7 @@
   &__name {
     width: 300px;
 
-    @mixin atSmall {
+    @media (max-width: $bp-small) {
       width: 200px;
     }
   }
