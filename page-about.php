@@ -97,52 +97,36 @@ $producer_query = new WP_Query(array(
 			<div class="container-sm member">
 				<?php while ($producer_query->have_posts()) :
 					$producer_query->the_post();
-					$producer_name = get_the_title();
-					$producer_name_en = get_field('name_en');
-					$producer_portfolio = get_field('portfolio');
-					$producer_portfolio_en = get_field('portfolio_en');
+
+					$producer_name = $lang == 'ko' ? get_the_title() : get_field('name_en');
+					$career        = $lang == 'ko' ? get_field('career') : get_field('career_en');
+
+					if (!$producer_name || !$career) {
+						continue;
+					}
 				?>
 					<div class="row member__row">
 						<div class="col member__name">
 							<h4 class=headline-sm data-scroll>
-								<?php
-								if ($lang == 'ko') {
-									echo esc_html($producer_name);
-								} else {
-									echo esc_html($producer_name_en);
-								}
-								?>
+								<?php echo esc_html($producer_name); ?>
 							</h4>
 						</div>
-						<div class="col member__career">
-							<?php
-							if ($lang == 'ko') {
-								$career = get_field('career');
-								if ($career) {
-									foreach ($career as $item) {
-										if ($item['title']) {
-											echo '<p data-scroll>' . esc_html($item['title']) . '</p>';
-										}
-										if ($item['text']) {
-											echo '<p data-scroll class="padding-left">' . esc_html($item['text']) . '</p>';
-										}
+
+						<?php if ($career) : ?>
+							<div class="col member__career">
+								<?php
+								foreach ($career as $item) {
+									if ($item['title']) {
+										echo '<p data-scroll>' . esc_html($item['title']) . '</p>';
+									}
+									if ($item['text']) {
+										echo '<p data-scroll class="padding-left">' . esc_html($item['text']) . '</p>';
 									}
 								}
-							} else {
-								$career = get_field('career_en');
-								if ($career) {
-									foreach ($career as $item) {
-										if ($item['title']) {
-											echo '<p data-scroll>' . esc_html($item['title']) . '</p>';
-										}
-										if ($item['text']) {
-											echo '<p data-scroll class="padding-left">' . esc_html($item['text']) . '</p>';
-										}
-									}
-								}
-							}
-							?>
-						</div>
+								?>
+							</div>
+						<?php endif; ?>
+
 					</div>
 
 				<?php endwhile; ?>
