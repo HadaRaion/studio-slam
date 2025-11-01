@@ -40,7 +40,7 @@ $producer_query = new WP_Query(array(
 ?>
 
 
-<main class="wrapper about" data-barba="container" data-barba-namespace="about">
+<main class="wrapper <?php echo $lang == 'ko' ? 'about' : 'about about-us'; ?>" data-barba="container" data-barba-namespace="about">
 	<div class="page-header">
 		<h2 class="headline-lg">
 			<span class="letter">A</span>

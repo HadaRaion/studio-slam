@@ -88,8 +88,29 @@
             "name": "cf_code",
             "aria-label": "",
             "type": "text",
-            "instructions": "",
+            "instructions": "페이지에서 보여질 폼의 숏코드를 입력해주세요.",
             "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "[contact-form-7 id=\"21\" title=\"Slam Contact\"]",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "[contact-form-7 id=\"폼ID\" title=\"폼 타이틀\"]",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6905a30a7f496",
+            "label": "폼 숏코드 (영문)",
+            "name": "cf_code_en",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "영문 페이지에서 보여질 폼의 숏코드를 입력해주세요.",
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -99,7 +120,7 @@
             "default_value": "",
             "maxlength": "",
             "allow_in_bindings": 0,
-            "placeholder": "",
+            "placeholder": "[contact-form-7 id=\"폼ID\" title=\"폼 타이틀\"]",
             "prepend": "",
             "append": ""
         }
@@ -129,5 +150,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1760923106
+    "modified": 1761977170
 }

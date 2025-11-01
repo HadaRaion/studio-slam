@@ -1,11 +1,13 @@
 <?php
 get_header();
 
+$lang = function_exists('pll_current_language') ? pll_current_language() : 'ko';
 $address_ko = get_field('address_ko') ?? '';
 $address_en = get_field('address_en') ?? '';
 $mail       = get_field('mail') ?? 'contact@studioslam.net';
 $map_url    = get_field('map_url') ?? '';
 $cf_code    = get_field('cf_code') ?? '';
+$cf_code_en = get_field('cf_code_en') ?? $cf_code;
 ?>
 
 <main class="wrapper contact" data-barba="container" data-barba-namespace="contact">
@@ -49,7 +51,7 @@ $cf_code    = get_field('cf_code') ?? '';
 			</div>
 
 			<div class="col--contact contact__form col--contact-form">
-				<?php echo do_shortcode($cf_code); ?>
+				<?php echo do_shortcode($lang == 'ko' ? $cf_code : $cf_code_en); ?>
 			</div>
 		</div>
 	</div>
