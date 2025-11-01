@@ -100,7 +100,21 @@
   }
 }
 
-#image-slider .splide {
+.splide {
+  max-width: 864px;
+  aspect-ratio: 864 / 576;
+  overflow: hidden;
+
+  &__track {
+    height: 100%;
+  }
+
+  &__slide > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   &__arrow {
     background: transparent;
   }
@@ -124,22 +138,6 @@
       background: #fff;
       opacity: 1;
     }
-  }
-
-  &__slide__wrapper {
-    padding-top: calc(576 / 864 * 100%);
-    position: relative;
-  }
-  &__slide__img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
   }
 }
 
