@@ -3,27 +3,6 @@
     "title": "Producers",
     "fields": [
         {
-            "key": "field_68f5a1776d1b1",
-            "label": "영문이름",
-            "name": "name_en",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "allow_in_bindings": 0,
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_68f5a020ac92d",
             "label": "경력",
             "name": "career",
@@ -90,6 +69,27 @@
                     "parent_repeater": "field_68f5a020ac92d"
                 }
             ]
+        },
+        {
+            "key": "field_68f5a1776d1b1",
+            "label": "영문이름",
+            "name": "name_en",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_68f5a108ac930",
@@ -178,5 +178,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1760930353
+    "modified": 1762033467
 }
