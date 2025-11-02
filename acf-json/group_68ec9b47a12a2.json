@@ -8,7 +8,7 @@
             "name": "headline_ko",
             "aria-label": "",
             "type": "textarea",
-            "instructions": "영문 메인페이지에 보여질 텍스트를 입력해주세요.",
+            "instructions": "메인페이지에 보여질 텍스트를 입력해주세요.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -21,7 +21,7 @@
             "allow_in_bindings": 0,
             "rows": 2,
             "placeholder": "",
-            "new_lines": ""
+            "new_lines": "br"
         },
         {
             "key": "field_68ec9b47a3449",
@@ -42,7 +42,7 @@
             "allow_in_bindings": 0,
             "rows": 2,
             "placeholder": "",
-            "new_lines": ""
+            "new_lines": "br"
         },
         {
             "key": "field_68ec9b47a3453",
@@ -142,5 +142,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1760418953
+    "modified": 1762064256
 }

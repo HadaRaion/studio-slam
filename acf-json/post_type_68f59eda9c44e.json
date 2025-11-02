@@ -15,11 +15,11 @@
         "edit_item": "PD 프로필 편집",
         "view_item": "PD 프로필 보기",
         "view_items": "PD 프로필 보기",
-        "add_new_item": "Add PD 프로필 ",
-        "add_new": "Add PD 프로필",
+        "add_new_item": "PD 프로필 추가",
+        "add_new": "PD 프로필 추가",
         "new_item": "신규 PD 프로필",
         "parent_item_colon": "부모 Member:",
-        "search_items": "Members 검색",
+        "search_items": "PD 검색",
         "not_found": "PD 프로필 없음",
         "not_found_in_trash": "휴지통에서 PD 프로필을 찾을 수 없습니다.",
         "archives": "PD 프로필 아카이브",
@@ -85,5 +85,5 @@
     "delete_with_user": false,
     "register_meta_box_cb": "",
     "enter_title_here": "이름",
-    "modified": 1760927764
+    "modified": 1762065416
 }
