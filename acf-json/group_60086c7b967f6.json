@@ -41,7 +41,7 @@
         },
         {
             "key": "field_61ca58939dfa1",
-            "label": "Director",
+            "label": "기획 (영문)",
             "name": "slam_leader_en",
             "aria-label": "",
             "type": "text",
@@ -54,10 +54,11 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "",
             "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "append": ""
         },
         {
             "key": "field_60086d7721a33",
@@ -81,7 +82,7 @@
         },
         {
             "key": "field_61ca58b39dfa2",
-            "label": "Producer",
+            "label": "연출 (영문)",
             "name": "slam_pd_en",
             "aria-label": "",
             "type": "text",
@@ -94,10 +95,11 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "OOO, OOO, OOO",
             "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "append": ""
         },
         {
             "key": "field_60086ddf21a34",
@@ -121,7 +123,7 @@
         },
         {
             "key": "field_61ca58c69dfa3",
-            "label": "Writer",
+            "label": "작가 (영문)",
             "name": "slam_writer_en",
             "aria-label": "",
             "type": "text",
@@ -134,10 +136,11 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "OOO, OOO, OOO",
             "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "append": ""
         },
         {
             "key": "field_60086df921a35",
@@ -161,7 +164,7 @@
         },
         {
             "key": "field_61ca58e29dfa4",
-            "label": "Aired",
+            "label": "방영기간 (영문)",
             "name": "slam_period_en",
             "aria-label": "",
             "type": "text",
@@ -174,10 +177,11 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "2020년 11월 16일 ~ 현재 \/ 매주 월요일 밤 10시 30분 ~ 12시 40분",
             "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "append": ""
         },
         {
             "key": "field_60086e3821a36",
@@ -201,7 +205,7 @@
         },
         {
             "key": "field_61ca59039dfa5",
-            "label": "Network",
+            "label": "방송사 (영문)",
             "name": "slam_channel_en",
             "aria-label": "",
             "type": "text",
@@ -214,10 +218,11 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "",
             "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "append": ""
         },
         {
             "key": "field_61c18dc5c05f2",
@@ -241,7 +246,7 @@
         },
         {
             "key": "field_61ca59369dfa6",
-            "label": "Platform",
+            "label": "플랫폼 (영문)",
             "name": "slam_platform_en",
             "aria-label": "",
             "type": "text",
@@ -254,10 +259,11 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "",
             "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "append": ""
         },
         {
             "key": "field_60086e6921a37",
@@ -281,7 +287,7 @@
         },
         {
             "key": "field_61ca59509dfa7",
-            "label": "Hosts",
+            "label": "출연진 (영문)",
             "name": "slam_hosts_en",
             "aria-label": "",
             "type": "text",
@@ -294,10 +300,11 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "OOO, OOO, OOO",
             "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "append": ""
         },
         {
             "key": "field_60086ef421a38",
@@ -314,14 +321,15 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
             "maxlength": "",
+            "allow_in_bindings": 1,
             "rows": "",
-            "new_lines": ""
+            "placeholder": "",
+            "new_lines": "br"
         },
         {
             "key": "field_61ca595e9dfa8",
-            "label": "About",
+            "label": "기획의도 (영문)",
             "name": "slam_plot_en",
             "aria-label": "",
             "type": "textarea",
@@ -334,10 +342,11 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
             "maxlength": "",
+            "allow_in_bindings": 1,
             "rows": "",
-            "new_lines": ""
+            "placeholder": "",
+            "new_lines": "br"
         },
         {
             "key": "field_60086f8c21a39",
@@ -358,7 +367,7 @@
         },
         {
             "key": "field_61ca5a109dfa9",
-            "label": "Official website",
+            "label": "공식홈페이지 (영문)",
             "name": "slam_link_en",
             "aria-label": "",
             "type": "url",
@@ -371,6 +380,7 @@
                 "id": ""
             },
             "default_value": "",
+            "allow_in_bindings": 1,
             "placeholder": "https:\/\/tv.jtbc.joins.com\/event\/pr10011199\/pm10060900"
         },
         {
@@ -593,5 +603,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1761794929
+    "modified": 1762062297
 }

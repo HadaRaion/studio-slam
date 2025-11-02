@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "서울특별시 마포구 상암산로 488-6, 14층(상암동, 중앙일보빌딩)",
+            "default_value": "서울특별시 마포구 상암산로 48-6, 14층(상암동, 중앙일보빌딩)",
             "maxlength": "",
             "allow_in_bindings": 0,
             "placeholder": "",
@@ -37,7 +37,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "14F, JoongAng Ilbo Building, 488-6 Sangamsan-ro, Mapo-gu, Seoul, Republic of Korea",
+            "default_value": "14F, JoongAng Ilbo Building, 48-6 Sangamsan-ro, Mapo-gu, Seoul, Republic of Korea",
             "maxlength": "",
             "allow_in_bindings": 0,
             "placeholder": "",
@@ -150,5 +150,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1761977170
+    "modified": 1762062501
 }

@@ -66,9 +66,9 @@ $producer_query = new WP_Query(array(
 
 					<div class="col about__text">
 						<?php if ($lang == 'ko'): ?>
-							<p><?php echo $value['text']; ?></p>
+							<p><?php echo wp_kses_post($value['text']); ?></p>
 						<?php else: ?>
-							<p><?php echo $value['text_en']; ?></p>
+							<p><?php echo wp_kses_post($value['text_en']); ?></p>
 						<?php endif; ?>
 					</div>
 				</div>

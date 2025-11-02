@@ -137,7 +137,7 @@ foreach ($fields as $key => $field) {
 						<p class="detail__sub-title"><?php echo esc_html($data['plot_title']); ?>.</p>
 					</div>
 					<div class="col">
-						<p><?php echo esc_html($data['plot']); ?></p>
+						<p><?php echo wp_kses_post($data['plot']); ?></p>
 					</div>
 				</div>
 			<?php endif; ?>
