@@ -76,3 +76,21 @@ add_filter('template_include', function ($template) {
 
   return $template;
 });
+
+// Kboard
+add_filter('kboard_list_where', 'my_kboard_list_where', 10, 3);
+function my_kboard_list_where($where, $board_id, $content_list)
+{
+  if ($board_id == '2') { // Recruit 게시판 id
+    $user_id = get_current_user_id();
+    if ($user_id) {
+      $board = new KBoard($board_id);
+      if (!$board->isAdmin()) {
+        $where .= "AND (`status`='' OR `status` IS NULL) OR `member_uid`='{$user_id}'";
+      }
+    } else {
+      $where .= "AND (`status`='' OR `status` IS NULL)";
+    }
+  }
+  return $where;
+}
