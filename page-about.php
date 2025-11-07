@@ -138,4 +138,5 @@ $producer_query = new WP_Query(array(
 
 </main>
 
-<?php get_footer(); ?>
+<?php
+get_footer();

@@ -44,4 +44,5 @@ $image_url = wp_get_attachment_url($mobile_bg_image);
 	</div>
 </main>
 
-<?php get_footer(); ?>
+<?php
+get_footer();
