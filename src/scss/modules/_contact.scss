@@ -1,21 +1,8 @@
 .contact {
-  .row--contact {
-    display: flex;
-    justify-content: space-between;
-
-    @media (max-width: 1000px) {
-      flex-direction: column;
-      .col--contact-form {
-        order: 1;
-      }
-      .col--contact-info {
-        order: 2;
-        margin-top: 100px;
-      }
-    }
-  }
-  .col--contact {
-    flex: 0 0 calc(50% - 40px);
+  .contact-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   &__info {
@@ -28,6 +15,10 @@
 
     &__content {
       margin-bottom: 18px;
+
+      & a {
+        text-decoration: underline;
+      }
 
       @media (max-width: 1402px) {
         margin-bottom: 10px;
