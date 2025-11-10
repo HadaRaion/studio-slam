@@ -1,22 +1,8 @@
 .contact {
-  .row--contact {
-    display: flex;
-    justify-content: space-between;
-
-    @media (max-width: 1000px) {
-      flex-direction: column;
-    }
-  }
-
-  .col--contact {
-    flex: 0 0 calc(50% - 40px);
+  &__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-    @media (max-width: 1000px) {
-      flex: revert;
-    }
+    gap: 20px;
   }
 
   &__info {
@@ -27,27 +13,25 @@
       font-weight: 700;
     }
 
-    &__content {
-      margin-bottom: 18px;
-    }
-
-    &__content-mail {
-      margin-bottom: 60px;
-
-      & a {
-        text-decoration: underline;
-      }
+    &__content-mail a {
+      text-decoration: underline;
     }
   }
 
   &__map {
     position: relative;
-    height: 400px;
+    max-height: 50dvh;
     overflow: hidden;
     max-width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-top: 16px;
 
-    @media (max-width: $bp-large) {
-      height: 300px;
+    @media (max-width: $bp-medium) {
+      max-height: 400px;
+    }
+
+    @media (max-width: $bp-small) {
+      max-height: 300px;
     }
 
     iframe {
