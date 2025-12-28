@@ -1,72 +1,35 @@
 .works {
+
   ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 -10px -50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 2rem;
 
-    &:after {
-      content: "";
-      flex: auto;
-    }
-  }
-
-  li {
-    width: 100%;
-    width: 33.3333%;
-    flex: 0 0 calc(33.3333% - 20px);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 50px;
 
     @media (max-width: $bp-medium) {
-      flex: 0 0 calc(50% - 20px);
+    grid-template-columns: repeat(2, 1fr);
     }
 
     @media (max-width: $bp-small) {
-      flex: 0 0 calc(100% - 20px);
+      grid-template-columns: 1fr;
     }
   }
 
-  &__image {
+  &__image-wrapper {
     position: relative;
     display: block;
     overflow: hidden;
-    padding-top: calc(10 / 7 * 100%);
+    aspect-ratio: 7 / 10;
     background: #000;
 
-    &::before {
-      /* content: '';
-			display: block;
-			height: 110%;
-			width: 100%;
-			top: 0;
-			left: 0;
-			background: $slamMid;
-			position: absolute;
-			transition: transform 0.3s var(--easing);
-			transform: rotate(27deg) translateX(75%); */
-    }
-
-    img {
+    > img {
       position: absolute;
-      top: 50%;
-      left: 0;
+      inset: 0;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
       transition: all 0.3s var(--easing);
       opacity: 0.4;
-      transform: translateY(-50%);
-    }
-
-    &:hover {
-      /* &::before {
-				transform: rotate(27deg) translateX(150%);
-			} */
-
-      & img {
-        opacity: 1;
-        transform: scale(1.04) translateY(-50%);
-      }
     }
   }
 
@@ -74,16 +37,33 @@
     margin-top: 14px;
   }
 
+  li {
+    cursor: pointer;
+
+    &:hover {
+
+      .works__image-wrapper > img {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+
+      .works__title {
+        color: $slamMid;
+      }
+    }
+  }
+
   &__pagination {
     display: flex;
     justify-content: center;
     margin-top: 80px;
-    font-size: 1.4rem;
+    font-size: 0.875rem;
 
     @media (max-width: $bp-small) {
       margin-top: 40px;
-      font-size: 1.2rem;
+      font-size: 0.75rem;
     }
+
     span,
     a {
       display: block;
@@ -94,6 +74,7 @@
       border: 1px solid #fff;
       box-sizing: border-box;
     }
+
     a:last-child {
       margin-right: 0;
     }
