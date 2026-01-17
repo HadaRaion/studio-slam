@@ -35,15 +35,13 @@
 
 		<header class="header">
 			<div class="container-fluid header__container">
-				<div class="row justify-content-between align-items-center row--direction-no-change">
-					<h1 class="col">
-						<a class="logo" href="<?php echo pll_home_url() ?>"><img src=<?php echo get_theme_file_uri('/images/logo_white.svg'); ?>" alt="Site Logo" /></a>
-					</h1>
-					<div class="col">
-						<ul class="languages">
-							<?php pll_the_languages(); ?>
-						</ul>
-					</div>
+				<h1 class="site-logo">
+					<a class="logo" href="<?php echo pll_home_url() ?>"><img src=<?php echo get_theme_file_uri('/images/logo_white.svg'); ?>" alt="Site Logo" /></a>
+				</h1>
+				<div class="">
+					<ul class="languages">
+						<?php pll_the_languages(); ?>
+					</ul>
 				</div>
 			</div>
 		</header>
