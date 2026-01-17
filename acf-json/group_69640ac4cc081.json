@@ -1,0 +1,435 @@
+{
+    "key": "group_69640ac4cc081",
+    "title": "About - History",
+    "fields": [
+        {
+            "key": "field_69640ac4cd839",
+            "label": "History (한글)",
+            "name": "history",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 1,
+            "rows_per_page": 10,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Year",
+            "sub_fields": [
+                {
+                    "key": "field_69640ac4cf5e8",
+                    "label": "Year",
+                    "name": "year",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_69640ac4cd839"
+                },
+                {
+                    "key": "field_69640ac4cf5ec",
+                    "label": "Contents",
+                    "name": "contents",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Content",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_69640ac4cfdfe",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_69640ac4cf5ec"
+                        },
+                        {
+                            "key": "field_69640ac4cfe01",
+                            "label": "Link",
+                            "name": "link",
+                            "aria-label": "",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post"
+                            ],
+                            "post_status": [
+                                "publish"
+                            ],
+                            "taxonomy": [
+                                "language:ko"
+                            ],
+                            "return_format": "object",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "bidirectional": 0,
+                            "ui": 1,
+                            "bidirectional_target": [],
+                            "parent_repeater": "field_69640ac4cf5ec"
+                        },
+                        {
+                            "key": "field_69640ac4cfe04",
+                            "label": "Platform",
+                            "name": "platform",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "미표기",
+                                "jtbc": "JTBC",
+                                "netflix": "넷플릭스",
+                                "youtube": "유튜브",
+                                "coupang": "쿠팡플레이",
+                                "tving": "티빙",
+                                "ksb": "KBS",
+                                "mbc": "MBC",
+                                "sbs": "SBS",
+                                "tvn": "tvN",
+                                "kakao": "카카오tv",
+                                "disney": "디즈니",
+                                "wave": "웨이브",
+                                "watcha": "왓챠",
+                                "custom": "직접업로드"
+                            },
+                            "default_value": "none",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0,
+                            "parent_repeater": "field_69640ac4cf5ec"
+                        },
+                        {
+                            "key": "field_69640ac4cfe07",
+                            "label": "Icon",
+                            "name": "icon",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "아이콘을 직접 추가하세요. 권장 이미지 사이즈: 24 x 24 (px)",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_69640ac4cfe04",
+                                        "operator": "==",
+                                        "value": "custom"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": 24,
+                            "min_height": 24,
+                            "min_size": "",
+                            "max_width": 100,
+                            "max_height": 100,
+                            "max_size": "0.1",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "full",
+                            "parent_repeater": "field_69640ac4cf5ec"
+                        }
+                    ],
+                    "parent_repeater": "field_69640ac4cd839"
+                }
+            ]
+        },
+        {
+            "key": "field_69640ac4cd83c",
+            "label": "History (영문)",
+            "name": "history_en",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 1,
+            "rows_per_page": 10,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Year",
+            "sub_fields": [
+                {
+                    "key": "field_69640ac4d1731",
+                    "label": "Year",
+                    "name": "year",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_69640ac4cd83c"
+                },
+                {
+                    "key": "field_69640ac4d1737",
+                    "label": "Contents",
+                    "name": "contents",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Content",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_69640ac4d1daf",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_69640ac4d1737"
+                        },
+                        {
+                            "key": "field_69640ac4d1db7",
+                            "label": "Link",
+                            "name": "link",
+                            "aria-label": "",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post"
+                            ],
+                            "post_status": [
+                                "publish"
+                            ],
+                            "taxonomy": [
+                                "language:en"
+                            ],
+                            "return_format": "id",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "bidirectional": 0,
+                            "ui": 1,
+                            "bidirectional_target": [],
+                            "parent_repeater": "field_69640ac4d1737"
+                        },
+                        {
+                            "key": "field_69640ac4d1dbd",
+                            "label": "Platform",
+                            "name": "platform",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "미표기",
+                                "jtbc": "JTBC",
+                                "netflix": "넷플릭스",
+                                "youtube": "유튜브",
+                                "coupang": "쿠팡플레이",
+                                "tving": "티빙",
+                                "ksb": "KBS",
+                                "mbc": "MBC",
+                                "sbs": "SBS",
+                                "tvn": "tvN",
+                                "kakao": "카카오tv",
+                                "disney": "디즈니",
+                                "wave": "웨이브",
+                                "watcha": "왓챠",
+                                "custom": "직접업로드"
+                            },
+                            "default_value": "none",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0,
+                            "parent_repeater": "field_69640ac4d1737"
+                        },
+                        {
+                            "key": "field_69640ac4d1dc3",
+                            "label": "Icon",
+                            "name": "icon",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "아이콘을 직접 추가하세요. 권장 이미지 사이즈: 24 x 24 (px)",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_69640ac4d1dbd",
+                                        "operator": "=="
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": 24,
+                            "min_height": 24,
+                            "min_size": "",
+                            "max_width": 100,
+                            "max_height": 100,
+                            "max_size": "0.1",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "full",
+                            "parent_repeater": "field_69640ac4d1737"
+                        }
+                    ],
+                    "parent_repeater": "field_69640ac4cd83c"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "9"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "533"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1768182530
+}
