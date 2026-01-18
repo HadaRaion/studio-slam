@@ -1,14 +1,14 @@
 {
-    "key": "group_69640ac4cc081",
-    "title": "About - History (한글)",
+    "key": "group_696c618eca45e",
+    "title": "About - History (영문)",
     "fields": [
         {
-            "key": "field_69640ac4cd839",
-            "label": "History (한글)",
-            "name": "history",
+            "key": "field_696c618ecc0b2",
+            "label": "History (영문)",
+            "name": "history_en",
             "aria-label": "",
             "type": "repeater",
-            "instructions": "연도별 히스토리를 추가하세요. 각 연도는 슬라이더의 하나의 슬라이드로 표시됩니다.",
+            "instructions": "영문페이지 - 연도별 히스토리를 추가하세요. 각 연도는 슬라이더의 하나의 슬라이드로 표시됩니다.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -25,12 +25,12 @@
             "button_label": "Add Year",
             "sub_fields": [
                 {
-                    "key": "field_69640ac4cf5e8",
+                    "key": "field_696c618ece628",
                     "label": "Year",
                     "name": "year",
                     "aria-label": "",
                     "type": "text",
-                    "instructions": "연도를 입력하세요. (예: 2024, 2025)",
+                    "instructions": "영문페이지 - 연도를 입력하세요. (예: 2024, 2025)",
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -44,15 +44,15 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_69640ac4cd839"
+                    "parent_repeater": "field_696c618ecc0b2"
                 },
                 {
-                    "key": "field_69640ac4cf5ec",
+                    "key": "field_696c618ece630",
                     "label": "Contents",
                     "name": "contents",
                     "aria-label": "",
                     "type": "repeater",
-                    "instructions": "해당 연도의 콘텐츠 목록을 추가하세요. 각 항목은 타이틀, 링크, 플랫폼 정보를 포함합니다.",
+                    "instructions": "영문페이지 - 해당 연도의 콘텐츠 목록을 추가하세요. 각 항목은 타이틀, 링크, 플랫폼 정보를 포함합니다.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -68,12 +68,12 @@
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
-                            "key": "field_69640ac4cfdfe",
+                            "key": "field_696c618ececc1",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
                             "type": "text",
-                            "instructions": "콘텐츠의 제목을 입력하세요. (예: 싱어게인, 흑백요리사)",
+                            "instructions": "영문페이지 - 콘텐츠의 제목을 입력하세요.",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -87,15 +87,15 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "parent_repeater": "field_69640ac4cf5ec"
+                            "parent_repeater": "field_696c618ece630"
                         },
                         {
-                            "key": "field_69640ac4cfe01",
+                            "key": "field_696c618ececc7",
                             "label": "Link",
                             "name": "link",
                             "aria-label": "",
                             "type": "post_object",
-                            "instructions": "관련 포스트를 선택하세요. 선택하면 타이틀에 해당 포스트로 연결되는 링크가 생성됩니다. (선택사항)",
+                            "instructions": "영문페이지 - 관련 포스트를 선택하세요. 선택하면 타이틀에 해당 포스트로 연결되는 링크가 생성됩니다. (선택사항)",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -110,7 +110,7 @@
                                 "publish"
                             ],
                             "taxonomy": [
-                                "language:ko"
+                                "language:en"
                             ],
                             "return_format": "id",
                             "multiple": 0,
@@ -119,15 +119,15 @@
                             "bidirectional": 0,
                             "ui": 1,
                             "bidirectional_target": [],
-                            "parent_repeater": "field_69640ac4cf5ec"
+                            "parent_repeater": "field_696c618ece630"
                         },
                         {
-                            "key": "field_69640ac4cfe04",
+                            "key": "field_696c618ececcd",
                             "label": "Platform",
                             "name": "platform",
                             "aria-label": "",
                             "type": "select",
-                            "instructions": "방송\/플랫폼을 선택하세요. 선택한 플랫폼의 아이콘이 타이틀 옆에 표시됩니다. '직접업로드'를 선택하면 커스텀 아이콘을 업로드할 수 있습니다.",
+                            "instructions": "영문페이지 - 방송\/플랫폼을 선택하세요. 선택한 플랫폼의 아이콘이 타이틀 옆에 표시됩니다. '직접업로드'를 선택하면 커스텀 아이콘을 업로드할 수 있습니다.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -162,22 +162,22 @@
                             "placeholder": "",
                             "create_options": 0,
                             "save_options": 0,
-                            "parent_repeater": "field_69640ac4cf5ec"
+                            "parent_repeater": "field_696c618ece630"
                         },
                         {
-                            "key": "field_69640ac4cfe07",
+                            "key": "field_696c618ececd4",
                             "label": "Icon",
                             "name": "icon",
                             "aria-label": "",
                             "type": "image",
-                            "instructions": "아이콘을 직접 추가하세요. 권장 이미지 사이즈: 24 x 24 (px)",
+                            "instructions": "영문페이지 - 아이콘을 직접 추가하세요. 권장 이미지 사이즈: 24 x 24 (px)",
                             "required": 1,
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_69640ac4cfe04",
+                                        "field": "field_696c618ececcd",
                                         "operator": "==",
-                                        "value": "custom"
+                                        "value": "none"
                                     }
                                 ]
                             ],
@@ -197,10 +197,10 @@
                             "mime_types": "",
                             "allow_in_bindings": 0,
                             "preview_size": "full",
-                            "parent_repeater": "field_69640ac4cf5ec"
+                            "parent_repeater": "field_696c618ece630"
                         }
                     ],
-                    "parent_repeater": "field_69640ac4cd839"
+                    "parent_repeater": "field_696c618ecc0b2"
                 }
             ]
         }
@@ -210,7 +210,7 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "9"
+                "value": "533"
             }
         ]
     ],
@@ -223,5 +223,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1768710644
+    "modified": 1768710569
 }

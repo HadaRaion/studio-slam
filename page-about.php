@@ -38,8 +38,6 @@ $producer_query = new WP_Query(array(
 	'orderby' => 'menu_order'
 ));
 
-
-
 $creators = get_field('creators') ?? '';
 $creators_en = get_field('creators_en') ?? '';
 ?>
@@ -99,7 +97,6 @@ $creators_en = get_field('creators_en') ?? '';
 		</div>
 
 		<?php
-		// Get history data based on language
 		$history_data = $lang == 'ko' ? get_field('history') : get_field('history_en');
 		?>
 
