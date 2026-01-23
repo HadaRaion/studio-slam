@@ -38,8 +38,7 @@ $producer_query = new WP_Query(array(
 	'orderby' => 'menu_order'
 ));
 
-$creators = get_field('creators') ?? '';
-$creators_en = get_field('creators_en') ?? '';
+$creators = ($lang == 'ko') ? get_field('creators') : get_field('creators_en');
 ?>
 
 
@@ -167,13 +166,15 @@ $creators_en = get_field('creators_en') ?? '';
 			</section>
 		<?php endif; ?>
 
-		<?php if ($creators) : ?>
+		<?php if ($creators && is_array($creators)) : ?>
 			<section class="about-section about-section--creators" aria-label="Creators">
 				<div class="container-sm">
 					<h2 class="headline-md" data-scroll>Creators.</h2>
-					<div class="creator-content">
-						<?php echo wp_kses_post($creators); ?>
-					</div>
+					<ul class="creator-list">
+						<?php foreach ($creators as $creator) : ?>
+							<li class="creator-name headline-sm"><?php echo esc_html($creator['name']); ?></li>
+						<?php endforeach; ?>
+					</ul>
 				</div>
 			</section>
 		<?php endif; ?>

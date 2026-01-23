@@ -141,37 +141,24 @@
         margin-left: 6px;
       }
     }
-    
-    .sr-only {
-      font-size: 0;
-      line-height: 0;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      position: absolute;
-      clip: rect(1px, 1px, 1px, 1px);
-      white-space: nowrap;
-    }
   }
 }
 
 .about-section--creators {
   
-  .creator-content {
+  .creator-list {
     margin-top: 32px;
+    display: flex;
+    gap: 1.5rem 2.47rem;
+    flex-wrap: wrap;
 
     @media (max-width: $bp-small) {
       margin-top: 16px;
+      gap: 1rem 1.25rem ;
     }
 
-    p {
-     font-size: 1.25rem;
-     line-height: 2.5;
+    .creator-name {
      font-weight: bold;
-
-     @media (max-width: $bp-small) {
-        font-size: 1.125rem;
-      }
     }
   }
 }
