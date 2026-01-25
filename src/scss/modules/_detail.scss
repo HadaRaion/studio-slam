@@ -57,6 +57,7 @@
         flex-direction: row;
         line-height: 25px;
         transition: letter-spacing 0.2s ease;
+        margin-top: 0.5rem;
 
         &::after {
           content: "";
