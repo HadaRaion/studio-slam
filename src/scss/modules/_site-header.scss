@@ -6,6 +6,18 @@
   padding: var(--header-padding) 0;
   transition: background 0.5s linear;
 
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
   .logo > img {
     height: var(--logo-height);
   }
@@ -22,10 +34,10 @@
     padding: 10px;
     margin-left: 20px;
     margin-right: -10px;
-    font-size: 2rem;
+    font-size: 1.25rem;
 
     @media (max-width: $bp-small) {
-      font-size: 1.5rem;
+      font-size: 1rem;
       margin-left: 10px;
       margin-right: -10px;
     }
@@ -37,20 +49,5 @@
 
   .lang-item:hover {
     color: $slamMid;
-  }
-}
-
-.social {
-  display: flex;
-
-  & li {
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: -10px;
-  }
-
-  a {
-    display: block;
-    font-size: 2rem;
   }
 }

@@ -1,0 +1,19 @@
+.page-body {
+    #kboard-default-list {
+        .kboard-search select,
+        .kboard-search button.kboard-default-button-small,
+        .kboard-search input,
+        .kboard-list thead tr td,
+        .kboard-list table a {
+            font-size: 1rem;
+        }
+    }
+
+    #kboard-default-document {
+        .kboard-detail,
+        .kboard-content .content-view {
+            font-size: 1rem;
+        }
+    }
+}
+

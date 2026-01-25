@@ -1,0 +1,227 @@
+{
+    "key": "group_696c618eca45e",
+    "title": "About - History (영문)",
+    "fields": [
+        {
+            "key": "field_696c618ecc0b2",
+            "label": "History (영문)",
+            "name": "history_en",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "영문페이지 - 연도별 히스토리를 추가하세요. 각 연도는 슬라이더의 하나의 슬라이드로 표시됩니다.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 1,
+            "rows_per_page": 10,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Year",
+            "sub_fields": [
+                {
+                    "key": "field_696c618ece628",
+                    "label": "Year",
+                    "name": "year",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "영문페이지 - 연도를 입력하세요. (예: 2024, 2025)",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_696c618ecc0b2"
+                },
+                {
+                    "key": "field_696c618ece630",
+                    "label": "Contents",
+                    "name": "contents",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "영문페이지 - 해당 연도의 콘텐츠 목록을 추가하세요. 각 항목은 타이틀, 링크, 플랫폼 정보를 포함합니다.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Content",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_696c618ececc1",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "영문페이지 - 콘텐츠의 제목을 입력하세요.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_696c618ece630"
+                        },
+                        {
+                            "key": "field_696c618ececc7",
+                            "label": "Link",
+                            "name": "link",
+                            "aria-label": "",
+                            "type": "post_object",
+                            "instructions": "영문페이지 - 관련 포스트를 선택하세요. 선택하면 타이틀에 해당 포스트로 연결되는 링크가 생성됩니다. (선택사항)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post"
+                            ],
+                            "post_status": [
+                                "publish"
+                            ],
+                            "taxonomy": [
+                                "language:en"
+                            ],
+                            "return_format": "id",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "bidirectional": 0,
+                            "ui": 1,
+                            "bidirectional_target": [],
+                            "parent_repeater": "field_696c618ece630"
+                        },
+                        {
+                            "key": "field_696c618ececcd",
+                            "label": "Platform",
+                            "name": "platform",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "영문페이지 - 방송\/플랫폼을 선택하세요. 선택한 플랫폼의 아이콘이 타이틀 옆에 표시됩니다. '직접업로드'를 선택하면 커스텀 아이콘을 업로드할 수 있습니다.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "미표기",
+                                "jtbc": "JTBC",
+                                "netflix": "넷플릭스",
+                                "youtube": "유튜브",
+                                "coupang": "쿠팡플레이",
+                                "tving": "티빙",
+                                "kbs": "KBS",
+                                "mbc": "MBC",
+                                "sbs": "SBS",
+                                "tvn": "tvN",
+                                "kakao": "카카오tv",
+                                "disney": "디즈니",
+                                "wavve": "웨이브",
+                                "watcha": "왓챠",
+                                "custom": "직접업로드"
+                            },
+                            "default_value": "none",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0,
+                            "parent_repeater": "field_696c618ece630"
+                        },
+                        {
+                            "key": "field_696c618ececd4",
+                            "label": "Icon",
+                            "name": "icon",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "영문페이지 - 아이콘을 직접 추가하세요. 권장 이미지 사이즈: 24 x 24 (px)",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_696c618ececcd",
+                                        "operator": "==",
+                                        "value": "none"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": 24,
+                            "min_height": 24,
+                            "min_size": "",
+                            "max_width": 100,
+                            "max_height": 100,
+                            "max_size": "0.1",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "full",
+                            "parent_repeater": "field_696c618ece630"
+                        }
+                    ],
+                    "parent_repeater": "field_696c618ecc0b2"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "533"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1768710569
+}

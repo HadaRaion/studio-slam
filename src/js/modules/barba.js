@@ -1,6 +1,7 @@
 import barba from "@barba/core";
 import gsap from "gsap";
 import initImageSlide from "./initImageSlide";
+import initHistorySlide from "./initHistorySlide";
 import { animationLeave, animationEnter, mobileMenuOff } from "../animations";
 
 function delay(n) {
@@ -82,6 +83,9 @@ barba.init({
     },
     {
       namespace: "about",
+      beforeEnter() {
+        initHistorySlide();
+      },
       once({ next }) {
         loadOnce(next);
       },

@@ -6,6 +6,7 @@
 @import "base/variables.scss";
 @import "base/reset";
 @import "base/typo";
+@import "base/utils";
 
 /* BEM Blocks */
 @import "modules/_layout";
@@ -22,3 +23,4 @@
 @import "modules/_works";
 @import "modules/_detail";
 @import "modules/_contact";
+@import "modules/_kboard";

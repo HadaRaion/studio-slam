@@ -11,15 +11,15 @@
 	</div>
 
 	<div class="container-sm works__list page-body">
-		<ul class="">
+		<ul>
 			<?php
 			while (have_posts()) {
 				the_post(); ?>
-				<li class="works__list__item">
-					<a class="works__image" href="<?php the_permalink(); ?>">
-						<img src="<?php the_post_thumbnail_url('slam-works-retina') ?>" alt="썸네일" />
+				<li role="article" aria-label="<?php the_title(); ?>">
+					<a class="works__image-wrapper" href="<?php the_permalink(); ?>">
+						<?php the_post_thumbnail( 'slam-works-retina', [ 'loading' => 'lazy' ] ); ?>
 					</a>
-					<h3 class="works__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+					<h3 class="works__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				</li>
 			<?php } ?>
 		</ul>
