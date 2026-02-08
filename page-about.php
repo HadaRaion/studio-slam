@@ -32,11 +32,6 @@ $about_data = [
 	],
 ];
 
-$producer_query = new WP_Query(array(
-	'post_type' => 'producer',
-	'posts_per_page' => 50,
-	'orderby' => 'menu_order'
-));
 
 $creators = ($lang == 'ko') ? get_field('creators') : get_field('creators_en');
 ?>
