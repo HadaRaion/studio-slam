@@ -86,10 +86,6 @@ $creators = ($lang == 'ko') ? get_field('creators') : get_field('creators_en');
 			</div>
 		</div>
 
-		<div class="container-fluid">
-			<div class="divide-logo"><img data-scroll src="<?php echo get_theme_file_uri('/images/logo_horizontal.svg'); ?>" alt="Studio Slam Logo" /></div>
-		</div>
-
 		<?php
 		$history_data = $lang == 'ko' ? get_field('history') : get_field('history_en');
 		?>
